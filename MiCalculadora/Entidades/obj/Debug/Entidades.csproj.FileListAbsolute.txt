@@ -1,0 +1,34 @@
+E:\Laboratorio 2 TPS\Entidades\Entidades\bin\Debug\Entidades.exe.config
+E:\Laboratorio 2 TPS\Entidades\Entidades\bin\Debug\Entidades.exe
+E:\Laboratorio 2 TPS\Entidades\Entidades\bin\Debug\Entidades.pdb
+E:\Laboratorio 2 TPS\Entidades\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+E:\Laboratorio 2 TPS\Entidades\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+E:\Laboratorio 2 TPS\Entidades\Entidades\obj\Debug\Entidades.exe
+E:\Laboratorio 2 TPS\Entidades\Entidades\obj\Debug\Entidades.pdb
+E:\Laboratorio 2 TPS\MiCalculadora\Entidades\Entidades\bin\Debug\Entidades.exe.config
+E:\Laboratorio 2 TPS\MiCalculadora\Entidades\Entidades\bin\Debug\Entidades.exe
+E:\Laboratorio 2 TPS\MiCalculadora\Entidades\Entidades\bin\Debug\Entidades.pdb
+E:\Laboratorio 2 TPS\MiCalculadora\Entidades\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+E:\Laboratorio 2 TPS\MiCalculadora\Entidades\Entidades\obj\Debug\Entidades.Properties.Resources.resources
+E:\Laboratorio 2 TPS\MiCalculadora\Entidades\Entidades\obj\Debug\Entidades.csproj.GenerateResource.cache
+E:\Laboratorio 2 TPS\MiCalculadora\Entidades\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+E:\Laboratorio 2 TPS\MiCalculadora\Entidades\Entidades\obj\Debug\Entidades.exe
+E:\Laboratorio 2 TPS\MiCalculadora\Entidades\Entidades\obj\Debug\Entidades.pdb
+E:\TP LAB 2\tp_laboratorio_2\TP1\MiCalculadora\Entidades\bin\Debug\Entidades.dll.config
+E:\TP LAB 2\tp_laboratorio_2\TP1\MiCalculadora\Entidades\bin\Debug\Entidades.dll
+E:\TP LAB 2\tp_laboratorio_2\TP1\MiCalculadora\Entidades\bin\Debug\Entidades.pdb
+E:\TP LAB 2\tp_laboratorio_2\TP1\MiCalculadora\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+E:\TP LAB 2\tp_laboratorio_2\TP1\MiCalculadora\Entidades\obj\Debug\Entidades.Properties.Resources.resources
+E:\TP LAB 2\tp_laboratorio_2\TP1\MiCalculadora\Entidades\obj\Debug\Entidades.csproj.GenerateResource.cache
+E:\TP LAB 2\tp_laboratorio_2\TP1\MiCalculadora\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+E:\TP LAB 2\tp_laboratorio_2\TP1\MiCalculadora\Entidades\obj\Debug\Entidades.dll
+E:\TP LAB 2\tp_laboratorio_2\TP1\MiCalculadora\Entidades\obj\Debug\Entidades.pdb
+D:\TLS\tp_lab_2\MiCalculadora\Entidades\bin\Debug\Entidades.dll.config
+D:\TLS\tp_lab_2\MiCalculadora\Entidades\bin\Debug\Entidades.dll
+D:\TLS\tp_lab_2\MiCalculadora\Entidades\bin\Debug\Entidades.pdb
+D:\TLS\tp_lab_2\MiCalculadora\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+D:\TLS\tp_lab_2\MiCalculadora\Entidades\obj\Debug\Entidades.Properties.Resources.resources
+D:\TLS\tp_lab_2\MiCalculadora\Entidades\obj\Debug\Entidades.csproj.GenerateResource.cache
+D:\TLS\tp_lab_2\MiCalculadora\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\TLS\tp_lab_2\MiCalculadora\Entidades\obj\Debug\Entidades.dll
+D:\TLS\tp_lab_2\MiCalculadora\Entidades\obj\Debug\Entidades.pdb
