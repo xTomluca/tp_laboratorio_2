@@ -40,3 +40,18 @@ D:\TLS\tp_lab_2\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.exe
 D:\TLS\tp_lab_2\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.pdb
 D:\TLS\tp_lab_2\MiCalculadora\MiCalculadora\bin\Debug\Entidades.dll.config
 D:\TLS\tp_lab_2\MiCalculadora\MiCalculadora\bin\Debug\Entidades.exe.config
+E:\LABO 2\tp_laboratorio_2\MiCalculadora\MiCalculadora\bin\Debug\MiCalculadora.exe.config
+E:\LABO 2\tp_laboratorio_2\MiCalculadora\MiCalculadora\bin\Debug\MiCalculadora.exe
+E:\LABO 2\tp_laboratorio_2\MiCalculadora\MiCalculadora\bin\Debug\MiCalculadora.pdb
+E:\LABO 2\tp_laboratorio_2\MiCalculadora\MiCalculadora\bin\Debug\Entidades.dll
+E:\LABO 2\tp_laboratorio_2\MiCalculadora\MiCalculadora\bin\Debug\Entidades.pdb
+E:\LABO 2\tp_laboratorio_2\MiCalculadora\MiCalculadora\bin\Debug\Entidades.dll.config
+E:\LABO 2\tp_laboratorio_2\MiCalculadora\MiCalculadora\bin\Debug\Entidades.exe.config
+E:\LABO 2\tp_laboratorio_2\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.csprojAssemblyReference.cache
+E:\LABO 2\tp_laboratorio_2\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.LaCalculadora.resources
+E:\LABO 2\tp_laboratorio_2\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.Properties.Resources.resources
+E:\LABO 2\tp_laboratorio_2\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.csproj.GenerateResource.cache
+E:\LABO 2\tp_laboratorio_2\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.csproj.CoreCompileInputs.cache
+E:\LABO 2\tp_laboratorio_2\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.csproj.CopyComplete
+E:\LABO 2\tp_laboratorio_2\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.exe
+E:\LABO 2\tp_laboratorio_2\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.pdb

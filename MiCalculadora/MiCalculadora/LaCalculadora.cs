@@ -28,8 +28,8 @@ namespace MiCalculadora
 		}
 		private void Limpiar()
 		{
-			this.txtNumero1.Text = string.Empty;
-			this.txtNumero2.Text = string.Empty;
+			this.txtNumero1.Clear();
+			this.txtNumero2.Clear();
 			this.lblResultado.Text = string.Empty;
 			this.cmbOperador.Text = string.Empty;
 		}
@@ -54,19 +54,13 @@ namespace MiCalculadora
 
 		private void btnConvertirADecimal_Click(object sender, EventArgs e)
 		{
-			if (lblResultado.Text != null)
-			{
-				Entidades.Numero resultado = new Numero();
-				lblResultado.Text = resultado.BinarioDecimal(lblResultado.Text);
-			}
+			Entidades.Numero resultado = new Numero();
+			lblResultado.Text = resultado.BinarioDecimal(lblResultado.Text);
 		}
 		private void btnConvertirABinario_Click(object sender, EventArgs e)
 		{
-			if (lblResultado.Text != null)
-			{
-				Entidades.Numero resultado = new Numero();
-				lblResultado.Text = resultado.DecimalBinario(lblResultado.Text);
-			}
+			Entidades.Numero resultado = new Numero();
+			lblResultado.Text = resultado.DecimalBinario(lblResultado.Text);
 		}
 	}
 }
