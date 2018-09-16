@@ -52,7 +52,8 @@ namespace Entidades
 		public string DecimalBinario(double numero)
 		{
 			string binario = "";
-			numero = Math.Abs(numero); // OBTENGO VALOR ABSOLUTO ( POSITIVO )
+			string invertido = "";
+			
 			while (numero > 0)
 			{
 				if (Math.Round(numero) % 2 == 0) // SI EL RESTO ES 0 AGREGO UN 0 EN MI STRING
@@ -61,16 +62,23 @@ namespace Entidades
 					binario += '1';
 				numero = (int)(numero / 2);
 			}
-			char[] arrayTemp = binario.ToArray(); // CONVIERTO STRING EN ARRAY
-			Array.Reverse(arrayTemp);	// DOY VUELTA EL ARRAY
 
-			return arrayTemp.ToString(); // DEVUELVO STRING 
+			for (int i = binario.Length - 1; i >= 0; i--) // INVIERTO STRING CHAR X CHAR
+			{
+				invertido += binario[i];
+			}
+
+			return invertido; 
 		}
 		public string DecimalBinario(string numero)
 		{
 			double aux = 0;
 			if (double.TryParse(numero, out aux)) // SI ES NUMERO VALIDO Y PASO AL METODO SOBRECARGADO CON DOUBLE
-				return DecimalBinario(aux);
+			{
+				aux = Math.Abs(aux); // OBTENGO VALOR ABSOLUTO ( POSITIVO )
+				if(aux>0)
+					return DecimalBinario(aux);
+			}
 			return "Valor Invalido";
 		}
 		public static double operator -(Numero n1, Numero n2)

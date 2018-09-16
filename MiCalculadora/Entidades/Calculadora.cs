@@ -10,8 +10,8 @@ namespace Entidades
 	{
 		private static string ValidarOperador(string operador)
 		{
-			if (operador.Equals("+") || operador.Equals("-") || operador.Equals("*") || operador.Equals("/"))
-				return operador;
+			if (operador.Equals("+") || operador.Equals("-") || operador.Equals("*") || operador.Equals("/")) // COMPARO STRING CON OPERADOR VALIDO
+				return operador; // SI ES VALIDO RETORNO OPERADOR
 
 			return "+";
 		}
