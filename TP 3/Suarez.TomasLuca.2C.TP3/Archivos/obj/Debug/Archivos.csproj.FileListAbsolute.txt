@@ -1,0 +1,6 @@
+E:\TP 3\Suarez.TomasLuca.2C.TP3\Archivos\bin\Debug\Archivos.dll
+E:\TP 3\Suarez.TomasLuca.2C.TP3\Archivos\bin\Debug\Archivos.pdb
+E:\TP 3\Suarez.TomasLuca.2C.TP3\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+E:\TP 3\Suarez.TomasLuca.2C.TP3\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+E:\TP 3\Suarez.TomasLuca.2C.TP3\Archivos\obj\Debug\Archivos.dll
+E:\TP 3\Suarez.TomasLuca.2C.TP3\Archivos\obj\Debug\Archivos.pdb
