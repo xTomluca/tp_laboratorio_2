@@ -48,9 +48,17 @@
     <Compile Include="Universidad.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Archivos\Archivos.csproj">
+      <Project>{cec3fe3f-8985-4785-b74d-a3c0338d64eb}</Project>
+      <Name>Archivos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Clases Abstractas\Clases Abstractas.csproj">
       <Project>{d9bbebe3-5462-4890-8a2d-43076eca9225}</Project>
       <Name>Clases Abstractas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Excepciones\Excepciones.csproj">
+      <Project>{d1800cf7-03c8-4847-a598-c210456e4d55}</Project>
+      <Name>Excepciones</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

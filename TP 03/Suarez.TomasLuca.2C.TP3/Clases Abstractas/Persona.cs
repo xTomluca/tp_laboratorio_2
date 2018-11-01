@@ -117,13 +117,13 @@ namespace Clases_Abstractas
                 foreach(char c in dato)
                 {
                     if(!char.IsDigit(c))
-                        throw new NacionalidadInvalidaException();
+                        throw new DniInvalidoException();
                 }
                 return ValidarDni(nacionalidad, int.Parse(dato));
             }
             else
             {
-                throw new NacionalidadInvalidaException();
+                throw new DniInvalidoException();
             }
         }
         string ValidarNombreApellido(string dato)

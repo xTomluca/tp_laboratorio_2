@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Clases_Abstractas;
 using static Clases_Instanciables.Universidad;
+using Excepciones;
+
 namespace Clases_Instanciables
 {
     public sealed class Profesor : Universitario
