@@ -7,13 +7,15 @@ using Clases_Abstractas;
 using static Clases_Instanciables.Universidad;
 namespace Clases_Instanciables
 {
-    sealed class Profesor : Universitario
+    public sealed class Profesor : Universitario
     {
         Queue<EClases> clasesDelDia;
-        Random random;
+        static Random random;
         void _randomClases()
         {
+            System.Threading.Thread.Sleep(2000);
             this.clasesDelDia.Enqueue((EClases)random.Next(4));
+            System.Threading.Thread.Sleep(2000);
             this.clasesDelDia.Enqueue((EClases)random.Next(4));
         }
         protected override string MostrarDatos()
@@ -30,20 +32,26 @@ namespace Clases_Instanciables
             foreach(EClases c in this.clasesDelDia)
             {
                 sb.Append("");
-                sb.Append(this.clasesDelDia);
+                sb.Append(c);
             }
             return sb.ToString();
         }
+
+        static Profesor()
+        {
+            random = new Random();
+        }
+
         public Profesor()
         {
-            this.random = new Random();
             this.clasesDelDia = new Queue<EClases>();
             this._randomClases();
         }
         public Profesor(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad)
             : base(id,nombre, apellido,dni, nacionalidad)
         {
-
+            this.clasesDelDia = new Queue<EClases>();
+            this._randomClases();
         }
         public override string ToString()
         {
@@ -59,5 +67,6 @@ namespace Clases_Instanciables
                 return true;
             return false;
         }
+
     }
 }

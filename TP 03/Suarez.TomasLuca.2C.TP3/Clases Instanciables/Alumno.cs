@@ -9,7 +9,7 @@ using static Clases_Instanciables.Universidad;
 
 namespace Clases_Instanciables
 {
-    sealed class Alumno : Universitario
+    public sealed class Alumno : Universitario
     {
         public enum EEstadoCuenta
         {
