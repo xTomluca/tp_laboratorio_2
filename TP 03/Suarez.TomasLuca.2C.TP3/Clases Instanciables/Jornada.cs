@@ -68,7 +68,7 @@ namespace Clases_Instanciables
         public static Jornada operator +(Jornada j, Alumno a)
         {
             if (j == a)
-                return j;
+                throw new AlumnoRepetidoException("Error, el alumno ya se encuentra en la Jornada");
             else
             {
                 j.Alumnos.Add(a);
@@ -90,7 +90,7 @@ namespace Clases_Instanciables
         public static bool Guardar(Jornada jornada)
         {
             Texto texto = new Texto();
-            string path = string.Format("{0}/text.txt",Environment.CurrentDirectory);
+            string path = "text.txt";
             bool retorno = false;
             try
             {
@@ -98,14 +98,14 @@ namespace Clases_Instanciables
             }
             catch(ArchivosException e)
             {
-                throw new ArchivosException("Error al Guardar en Jornada", e.InnerException);
+                throw new ArchivosException("Error al Guardar en JORNADA", e);
             }
             return retorno;
         }
         public string Leer()
         {
             Texto texto = new Texto();
-            string path = string.Format("{0}/text.txt", Environment.CurrentDirectory);
+            string path = "text.txt";
             string leido = "";
             try
             {
@@ -113,7 +113,7 @@ namespace Clases_Instanciables
             }
             catch(ArchivosException e)
             {
-                throw new ArchivosException("Error al Leer en Jornada", e.InnerException);
+                throw new ArchivosException("Error al Leer en JORNADA", e);
             }
             return leido;
         }

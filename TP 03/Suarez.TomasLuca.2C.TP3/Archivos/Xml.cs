@@ -9,13 +9,12 @@ using System.Xml;
 using System.Xml.Serialization;
 namespace Archivos
 {
-    class Xml<T> : IArchivo<T>
+    public class Xml<T> : IArchivo<T>
     {
         public bool Guardar(string archivo, T datos)
         {
             XmlTextWriter writer = null;
             XmlSerializer serializer = null;
-            bool retorno = true;
             try
             {
                 writer = new XmlTextWriter(archivo, Encoding.UTF8);
@@ -23,20 +22,18 @@ namespace Archivos
             }
             catch(Exception e)
             {
-                retorno = false;
-                throw new ArchivosException("Error al Guardar XML", e.InnerException);
+                throw new ArchivosException("Error al Guardar XML", e);
             }
             finally
             {
                 writer.Close();
             }
-            return retorno;
+            return true;
         }
         public bool Leer(string archivo, out T datos)
         {
             XmlTextReader reader = null;
             XmlSerializer serializer = null;
-            bool retorno = true;
             try
             {
                 reader = new XmlTextReader(archivo);
@@ -44,14 +41,13 @@ namespace Archivos
             }
             catch(Exception e)
             {
-                retorno = false;
-                throw new ArchivosException("Error al Leer XML", e.InnerException);
+                throw new ArchivosException("Error al Leer XML", e);
             }
             finally
             {
                 reader.Close();
             }
-            return retorno;
+            return true;
         }
     }
 }

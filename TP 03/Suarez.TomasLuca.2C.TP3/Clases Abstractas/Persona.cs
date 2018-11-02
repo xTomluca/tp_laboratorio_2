@@ -23,7 +23,7 @@ namespace Clases_Abstractas
                 return this.apellido;
             }
             set
-            {
+            { 
                 this.nombre = this.ValidarNombreApellido(value);
             }
         }
@@ -100,14 +100,14 @@ namespace Clases_Abstractas
                     if (dato >= 1 && dato <= 89999999)
                         return dato;
                     else
-                        throw new DniInvalidoException();
+                        throw new DniInvalidoException("ERROR, DNI Argentino invalido: Fuera de rango");
                 case ENacionalidad.Extranjero:
                     if (dato >= 90000000 && dato <= 99999999)
                         return dato;
                     else
-                        throw new DniInvalidoException();
+                        throw new DniInvalidoException("ERROR, DNI Extranjero invalido: Fuera de rango");
                 default:
-                    throw new NacionalidadInvalidaException();
+                    throw new NacionalidadInvalidaException("ERROR, Nacionalidad INVALIDA");
             }
         }
         int ValidarDni(ENacionalidad nacionalidad, string dato)
@@ -117,13 +117,13 @@ namespace Clases_Abstractas
                 foreach(char c in dato)
                 {
                     if(!char.IsDigit(c))
-                        throw new DniInvalidoException();
+                        throw new DniInvalidoException("ERROR, DNI contiene caracteres NO numericos");
                 }
                 return ValidarDni(nacionalidad, int.Parse(dato));
             }
             else
             {
-                throw new DniInvalidoException();
+                throw new DniInvalidoException("ERROR, Cantidad de caracteres erronea");
             }
         }
         string ValidarNombreApellido(string dato)

@@ -21,7 +21,7 @@ namespace Archivos
             catch (Exception e)
             {
                 retorno = false;
-                throw new ArchivosException("Error al Guardar Archivo", e.InnerException);
+                throw new ArchivosException("Error al Guardar Archivo", e);
             }
             finally
             {
@@ -42,7 +42,7 @@ namespace Archivos
             catch(Exception e)
             {
                 retorno = false;
-                throw new ArchivosException("Error al Leer Archivo", e.InnerException);
+                throw new ArchivosException("Error al Leer Archivo", e);
             }
             finally
             {
