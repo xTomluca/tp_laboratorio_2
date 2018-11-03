@@ -7,3 +7,12 @@ E:\TP 3\Suarez.TomasLuca.2C.TP3\Clases Abstractas\bin\Debug\Excepciones.pdb
 E:\TP 3\Suarez.TomasLuca.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csproj.CopyComplete
 E:\TP 3\Suarez.TomasLuca.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.dll
 E:\TP 3\Suarez.TomasLuca.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.pdb
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Clases Abstractas\bin\Debug\Clases Abstractas.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Clases Abstractas\bin\Debug\Clases Abstractas.pdb
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Clases Abstractas\bin\Debug\Excepciones.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Clases Abstractas\bin\Debug\Excepciones.pdb
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csprojAssemblyReference.cache
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csproj.CoreCompileInputs.cache
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csproj.CopyComplete
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.pdb

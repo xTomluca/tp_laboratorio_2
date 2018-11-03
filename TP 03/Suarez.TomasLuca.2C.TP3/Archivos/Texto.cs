@@ -12,7 +12,6 @@ namespace Archivos
         public bool Guardar(string archivo, string datos)
         {
             StreamWriter writer = null;
-            bool retorno = true;
             try
             {
                 writer = new StreamWriter(archivo);
@@ -20,7 +19,6 @@ namespace Archivos
             }
             catch (Exception e)
             {
-                retorno = false;
                 throw new ArchivosException("Error al Guardar Archivo", e);
             }
             finally
@@ -28,12 +26,11 @@ namespace Archivos
                 writer.Close();
             }
 
-            return retorno;
+            return true;
         }
         public bool Leer(string archivo, out string datos)
         {
             StreamReader reader = null;
-            bool retorno = true;
             try
             {
                 reader = new StreamReader(archivo);
@@ -41,14 +38,13 @@ namespace Archivos
             }
             catch(Exception e)
             {
-                retorno = false;
                 throw new ArchivosException("Error al Leer Archivo", e);
             }
             finally
             {
                 reader.Close();
             }
-            return retorno;
+            return true ;
         }
     }
 }

@@ -18,6 +18,7 @@ namespace Archivos
             try
             {
                 writer = new XmlTextWriter(archivo, Encoding.UTF8);
+                serializer = new XmlSerializer(typeof(T));
                 serializer.Serialize(writer, datos);
             }
             catch(Exception e)
@@ -37,6 +38,7 @@ namespace Archivos
             try
             {
                 reader = new XmlTextReader(archivo);
+                serializer = new XmlSerializer(typeof(T));
                 datos = (T)serializer.Deserialize(reader);
             }
             catch(Exception e)

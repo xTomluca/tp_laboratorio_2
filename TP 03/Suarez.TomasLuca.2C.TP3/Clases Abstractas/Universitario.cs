@@ -21,7 +21,7 @@ namespace Clases_Abstractas
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine(base.ToString());
-            sb.AppendFormat("Legajo: {0}", this.legajo);
+            sb.AppendFormat("Legajo: {0}\n", this.legajo);
             return sb.ToString();
         }
         public static bool operator !=(Universitario pg1, Universitario pg2)

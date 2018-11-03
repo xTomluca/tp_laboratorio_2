@@ -8,15 +8,10 @@ namespace Excepciones
 {
     public class DniInvalidoException : Exception
     {
-        /*public DniInvalidoException()
+        public DniInvalidoException()
         {
-
-        }*/
-        public DniInvalidoException(string message) : base(message)
-        {
-
         }
-        public DniInvalidoException(string message, Exception innerException) : base(message, innerException)
+        public DniInvalidoException(string message) : base(message)
         {
 
         }

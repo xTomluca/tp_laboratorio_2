@@ -12,9 +12,9 @@ namespace Excepciones
         {
 
         }
-        /*public SinProfesorException(string message, Exception innerException) : base(message, innerException)
+        public SinProfesorException(string message, Exception innerException) : base(message, innerException)
         {
 
-        }*/
+        }
     }
 }

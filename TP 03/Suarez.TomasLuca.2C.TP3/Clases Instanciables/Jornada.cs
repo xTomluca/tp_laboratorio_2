@@ -51,7 +51,11 @@ namespace Clases_Instanciables
         {
             this.Alumnos = new List<Alumno>();
         }
-
+        public Jornada(EClases clase, Profesor instructor) : this()
+        {
+            this.Instructor = instructor;
+            this.Clase = clase;
+        }
         public static bool operator !=(Jornada j, Alumno a)
         {
             return !(j == a);
@@ -70,16 +74,14 @@ namespace Clases_Instanciables
             if (j == a)
                 throw new AlumnoRepetidoException("Error, el alumno ya se encuentra en la Jornada");
             else
-            {
                 j.Alumnos.Add(a);
-                return j;
-            }
+            return j;
         }
         public override string ToString()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendFormat("Clase: {0}", this.Clase);
-            stringBuilder.AppendFormat("Profesor: {0}", this.Instructor);
+            stringBuilder.AppendFormat("-->Clase: {0}\n", this.Clase);
+            stringBuilder.AppendFormat("->Profesor: {0}\n", this.Instructor);
             foreach (Alumno aux in this.Alumnos)
             {
                 stringBuilder.AppendLine(aux.ToString());
@@ -92,29 +94,15 @@ namespace Clases_Instanciables
             Texto texto = new Texto();
             string path = "text.txt";
             bool retorno = false;
-            try
-            {
-                retorno = texto.Guardar(path, jornada.ToString());
-            }
-            catch(ArchivosException e)
-            {
-                throw new ArchivosException("Error al Guardar en JORNADA", e);
-            }
+            retorno = texto.Guardar(path, jornada.ToString());
             return retorno;
         }
-        public string Leer()
+        public static string Leer()
         {
             Texto texto = new Texto();
             string path = "text.txt";
             string leido = "";
-            try
-            {
-                texto.Leer(path, out leido);
-            }
-            catch(ArchivosException e)
-            {
-                throw new ArchivosException("Error al Leer en JORNADA", e);
-            }
+            texto.Leer(path, out leido);
             return leido;
         }
     }

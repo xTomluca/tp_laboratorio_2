@@ -36,14 +36,21 @@ namespace Clases_Instanciables
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine(base.MostrarDatos());
-            sb.AppendFormat("Clases que toma: {0}", this.claseQueToma);
-            sb.AppendFormat("Estado de Cuenta: {0}", this.estadoCuenta);
+            sb.AppendFormat("{0}\n", this.ParticiparEnClase());
+            sb.AppendFormat("Estado de Cuenta: {0}\n", this.estadoCuenta);
             return sb.ToString();
         }
         public static bool operator !=(Alumno a, EClases eClases)
         {
             return !(a == eClases);
         }
+
+        /// <summary>
+        /// Verifica si el Alumno toma esa Clase
+        /// </summary>
+        /// <param name="a">Alumno</param>
+        /// <param name="eClases">Enumerado Clase</param>
+        /// <returns>TRUE Si toma esa clase y no es Deudor - FALSE No toma esa Clase y/o es Deudor</returns>
         public static bool operator ==(Alumno a, EClases eClases)
         {
             if (a.claseQueToma == eClases && a.estadoCuenta != EEstadoCuenta.Deudor)
@@ -52,7 +59,7 @@ namespace Clases_Instanciables
         }
         protected override string ParticiparEnClase()
         {
-            return "TOMA CLASE DE " + this.claseQueToma;
+            return "Toma clase de: " + this.claseQueToma;
         }
         public override string ToString()
         {

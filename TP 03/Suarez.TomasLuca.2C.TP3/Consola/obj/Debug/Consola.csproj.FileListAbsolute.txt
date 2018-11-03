@@ -1,0 +1,16 @@
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Consola\obj\Debug\Consola.csprojAssemblyReference.cache
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Consola\obj\Debug\Consola.csproj.CoreCompileInputs.cache
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Consola\bin\Debug\Consola.exe.config
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Consola\bin\Debug\Consola.exe
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Consola\bin\Debug\Consola.pdb
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Consola\bin\Debug\Archivos.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Consola\bin\Debug\Clases Abstractas.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Consola\bin\Debug\Clases Instanciables.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Consola\bin\Debug\Excepciones.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Consola\bin\Debug\Archivos.pdb
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Consola\bin\Debug\Clases Abstractas.pdb
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Consola\bin\Debug\Clases Instanciables.pdb
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Consola\bin\Debug\Excepciones.pdb
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Consola\obj\Debug\Consola.csproj.CopyComplete
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Consola\obj\Debug\Consola.exe
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Consola\obj\Debug\Consola.pdb

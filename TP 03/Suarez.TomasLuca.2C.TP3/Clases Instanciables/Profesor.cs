@@ -15,26 +15,24 @@ namespace Clases_Instanciables
         static Random random;
         void _randomClases()
         {
-            System.Threading.Thread.Sleep(2000);
             this.clasesDelDia.Enqueue((EClases)random.Next(4));
-            System.Threading.Thread.Sleep(2000);
+            System.Threading.Thread.Sleep(1000);
             this.clasesDelDia.Enqueue((EClases)random.Next(4));
         }
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine(base.MostrarDatos());
-            sb.AppendLine(this.ParticiparEnClase()); /// DUDA!!!
+            sb.AppendLine(this.ParticiparEnClase());
             return sb.ToString();
         }
         protected override string ParticiparEnClase()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("CLASES DEL DIA");
+            sb.AppendLine("Clases del dia:");
             foreach(EClases c in this.clasesDelDia)
             {
-                sb.Append("");
-                sb.Append(c);
+                sb.AppendLine(c.ToString());
             }
             return sb.ToString();
         }
@@ -59,10 +57,22 @@ namespace Clases_Instanciables
         {
             return this.MostrarDatos();
         }
+        /// <summary>
+        /// Profesor desigual a Clase si no dicta esta
+        /// </summary>
+        /// <param name="i">Profesor</param>
+        /// <param name="clase">EClase</param>
+        /// <returns>TRUE Profesor NO da esta Clase | FALSE Da esta clase</returns>
         public static bool operator !=(Profesor i, EClases clase)
         {
             return !(i == clase);
         }
+        /// <summary>
+        /// Profesor igual a Clase si dicta esta
+        /// </summary>
+        /// <param name="i">Profesor</param>
+        /// <param name="clase">EClase</param>
+        /// <returns>TRUE Profesor da esta Clase | FALSE No da esta clase</returns>
         public static bool operator ==(Profesor i, EClases clase)
         {
             if (i.clasesDelDia.Contains(clase))
