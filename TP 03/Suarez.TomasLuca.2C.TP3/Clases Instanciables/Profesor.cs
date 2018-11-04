@@ -11,14 +11,61 @@ namespace Clases_Instanciables
 {
     public sealed class Profesor : Universitario
     {
+        #region Atributos
         Queue<EClases> clasesDelDia;
         static Random random;
+        #endregion
+
+        #region Constructores
+        /// <summary>
+        /// Constructor estatico
+        /// </summary>
+        static Profesor()
+        {
+            random = new Random();
+        }
+
+        /// <summary>
+        /// Constructor por Defecto
+        /// </summary>
+        public Profesor()
+        {
+            this.clasesDelDia = new Queue<EClases>();
+            this._randomClases();
+        }
+
+        /// <summary>
+        /// Constructor con parametros
+        /// </summary>
+        /// <param name="id">ID Profesor</param>
+        /// <param name="nombre">Nombre del Profesor</param>
+        /// <param name="apellido">Apellido del Profesor</param>
+        /// <param name="dni">DNI del Profesor</param>
+        /// <param name="nacionalidad">Nacionalidad del Profesor</param>
+        public Profesor(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad)
+            : base(id,nombre, apellido,dni, nacionalidad)
+        {
+            this.clasesDelDia = new Queue<EClases>();
+            this._randomClases();
+        }
+        #endregion
+
+        #region Metodos
+
+        /// <summary>
+        /// Carga Random de Clases
+        /// </summary>
         void _randomClases()
         {
-            this.clasesDelDia.Enqueue((EClases)random.Next(4));
-            System.Threading.Thread.Sleep(1000);
-            this.clasesDelDia.Enqueue((EClases)random.Next(4));
+            this.clasesDelDia.Enqueue((EClases)random.Next(3));
+            System.Threading.Thread.Sleep(600);
+            this.clasesDelDia.Enqueue((EClases)random.Next(3));
         }
+
+        /// <summary>
+        /// Muestra datos del Profesor 
+        /// </summary>
+        /// <returns>Datos del Profesor</returns>
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
@@ -26,33 +73,26 @@ namespace Clases_Instanciables
             sb.AppendLine(this.ParticiparEnClase());
             return sb.ToString();
         }
+
+        /// <summary>
+        /// Muestra que dicta el Profesor
+        /// </summary>
+        /// <returns>Clases que dicta el Profesor</returns>
         protected override string ParticiparEnClase()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Clases del dia:");
-            foreach(EClases c in this.clasesDelDia)
+            sb.AppendLine("CLASES DEL DIA:");
+            foreach (EClases c in this.clasesDelDia)
             {
                 sb.AppendLine(c.ToString());
             }
             return sb.ToString();
         }
 
-        static Profesor()
-        {
-            random = new Random();
-        }
-
-        public Profesor()
-        {
-            this.clasesDelDia = new Queue<EClases>();
-            this._randomClases();
-        }
-        public Profesor(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad)
-            : base(id,nombre, apellido,dni, nacionalidad)
-        {
-            this.clasesDelDia = new Queue<EClases>();
-            this._randomClases();
-        }
+        /// <summary>
+        /// Hace publico Datos del Profesor
+        /// </summary>
+        /// <returns>Datos del Profesor</returns>
         public override string ToString()
         {
             return this.MostrarDatos();
@@ -79,6 +119,6 @@ namespace Clases_Instanciables
                 return true;
             return false;
         }
-
+        #endregion
     }
 }

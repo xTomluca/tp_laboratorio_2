@@ -11,6 +11,10 @@ namespace Clases_Instanciables
 {
     public class Universidad
     {
+        #region Enumerado
+        /// <summary>
+        /// Enumerado Clases
+        /// </summary>
         public enum EClases
         {
             Programacion,
@@ -18,10 +22,18 @@ namespace Clases_Instanciables
             Legislacion,
             SPD
         }
+        #endregion
+
+        #region Atributos
         List<Alumno> alumnos;
         List<Jornada> jornadas;
         List<Profesor> profesores;
+        #endregion
 
+        #region Propiedades
+        /// <summary>
+        /// Getter y setter lista de Alumnos
+        /// </summary>
         public List<Alumno> Alumnos
         {
             get
@@ -33,6 +45,9 @@ namespace Clases_Instanciables
                 this.alumnos = value;
             }
         }
+        /// <summary>
+        /// Getter y setter lista de Instructores(profesores)
+        /// </summary>
         public List<Profesor> Instructores
         {
             get
@@ -44,6 +59,9 @@ namespace Clases_Instanciables
                 this.profesores = value;
             }
         }
+        /// <summary>
+        /// Getter y setter lista de Jornadas
+        /// </summary>
         public List<Jornada> Jornadas
         {
             get
@@ -55,6 +73,14 @@ namespace Clases_Instanciables
                 this.jornadas = value;
             }
         }
+        #endregion
+
+        #region Indexador
+        /// <summary>
+        /// Indexador getter y setter de jornada
+        /// </summary>
+        /// <param name="i">Indice</param>
+        /// <returns>Jornada en Indice deseado</returns>
         public Jornada this[int i]
         {
             get
@@ -66,49 +92,51 @@ namespace Clases_Instanciables
                 this.jornadas[i] = value;
             }
         }
+        #endregion
+
+        #region Constructores
+        /// <summary>
+        /// Constructor de Universidad
+        /// </summary>
         public Universidad()
         {
             this.Alumnos = new List<Alumno>();
             this.Instructores = new List<Profesor>();
             this.Jornadas = new List<Jornada>();
         }
+        #endregion
 
+        #region Metodos
         /// <summary>
         /// Guarda en XML Datos de Universidad
         /// </summary>
         /// <param name="uni">Universidad a Guardar</param>
-        /// <returns></returns>
+        /// <returns>Guardado = True, caso contrario Excepcion</returns>
         public static bool Guardar(Universidad uni)
         {
             string path = "Universidad.xml";
             Xml<Universidad> xml = new Xml<Universidad>(); ;
-            try
-            {
-                xml.Guardar(path, uni);
-            }
-            catch(ArchivosException e)
-            {
-                throw new ArchivosException("Error al Guardar Universidad XML",e);
-            }
+            xml.Guardar(path, uni);
             return true;
 
         }
+        /// <summary>
+        /// Lee desde XML la Universidad Guardada
+        /// </summary>
+        /// <returns>Devuelve Universidad, en caso de error una Excepcion</returns>
         public static Universidad Leer()
         {
             string path = "Universidad.xml";
             Universidad aux = null;
             Xml<Universidad> xml= new Xml<Universidad>();
-            try
-            {
-                xml.Leer(path, out aux);
-            }
-            catch(ArchivosException e)
-            {
-                throw new ArchivosException("Error al Leer Universidad XML", e);
-            }
+            xml.Leer(path, out aux);
             return aux;
         }
-
+        /// <summary>
+        /// Muestra los Datos de la Universidad
+        /// </summary>
+        /// <param name="uni">Universidad a mostrar</param>
+        /// <returns>Retorna String con datos de la Universidad</returns>
         private static string MostrarDatos(Universidad uni)
 
         {
@@ -119,6 +147,10 @@ namespace Clases_Instanciables
             }
             return stringBuilder.ToString();
         }
+        /// <summary>
+        /// Hace visible los datos de la Universidad
+        /// </summary>
+        /// <returns>Retorna datos de la Universidad</returns>
         public override string ToString()
         {
             return Universidad.MostrarDatos(this);
@@ -209,6 +241,13 @@ namespace Clases_Instanciables
             throw new SinProfesorException("No se encontro profesor incapaz de dar clase");
         }
 
+        /// <summary>
+        /// Agrega una nueva Clase, generando una nueva Jornada
+        /// (con su respectivo Profesor y Alumnos que tomen esa clase)
+        /// </summary>
+        /// <param name="g">Universidad a cargar</param>
+        /// <param name="clase">Clase deseada</param>
+        /// <returns></returns>
         public static Universidad operator +(Universidad g, EClases clase)
         {
             Jornada jornada;
@@ -225,7 +264,12 @@ namespace Clases_Instanciables
             g.Jornadas.Add(jornada);
             return g;
         }
-
+        /// <summary>
+        /// Agrega Alumno a la Universidad
+        /// </summary>
+        /// <param name="u">Universidad donde agregar Alumno</param>
+        /// <param name="a">Alumno a agregar</param>
+        /// <returns>Retorna Universidad con Alumno nuevo, caso contrario Excepcion</returns>
         public static Universidad operator +(Universidad u, Alumno a)
         {
             if (u == a)
@@ -234,26 +278,19 @@ namespace Clases_Instanciables
                 u.Alumnos.Add(a);
             return u;
         }
+
+        /// <summary>
+        /// Agrega un Profesor a la Universidad
+        /// </summary>
+        /// <param name="u">Universidad donde agregar Profesor</param>
+        /// <param name="i">Profesor a agregar</param>
+        /// <returns>Retorna Universidad</returns>
         public static Universidad operator+(Universidad u, Profesor i)
         {
             if (u != i)
                 u.Instructores.Add(i);
             return u;
         }
-
-
-            /*
-             Al agregar una clase a un Universidad se deberá generar y agregar una nueva Jornada indicando la
-            clase, un Profesor que pueda darla (según su atributo ClasesDelDia) y la lista de alumnos que la
-            toman (todos los que coincidan en su campo ClaseQueToma).
-             Se agregarán Alumnos y Profesores mediante el operador +, validando que no estén previamente
-            cargados.
-             La igualación entre un Universidad y una Clase retornará el primer Profesor capaz de dar esa clase.
-            Sino, lanzará la Excepción SinProfesorException. El distinto retornará el primer Profesor que no
-            pueda dar la clase.
-             MostrarDatos será privado y de clase. Los datos del Universidad se harán públicos mediante
-            ToString.
-             Leer de clase retornará un Universidad con todos los datos previamente serializados.*/
-
-        }
+    }
+    #endregion
 }

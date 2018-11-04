@@ -1,30 +1,24 @@
-Clase: Programacion
-Profesor: Nombre completo: Lopez,Juan
-Nacionalidad: Argentino
-Dni: 12234456
+--->JORNADA
+-->CLASE: Laboratorio
+->PROFESOR: 
+NOMBRE COMPLETO: Lopez,Juan
+NACIONALIDAD: Argentino
+DNI: 12234456
 
-Legajo: 1
+LEGAJO: 1
 
-Clases del dia:
+CLASES DEL DIA:
+Laboratorio
 Legislacion
-Programacion
 
+>ALUMNO:
+NOMBRE COMPLETO: Suarez,Joaquin
+NACIONALIDAD: Extranjero
+DNI: 91122456
 
-Nombre completo: Lopez,Juan
-Nacionalidad: Argentino
-Dni: 12234456
+LEGAJO: 7
 
-Legajo: 1
+TOMA CLASE DE: Laboratorio
+ESTADO DE CUENTA: AlDia
 
-Toma clase de: Programacion
-Estado de Cuenta: Becado
-
-Nombre completo: Gonzalez,Carlos
-Nacionalidad: Argentino
-Dni: 12236456
-
-Legajo: 5
-
-Toma clase de: Programacion
-Estado de Cuenta: AlDia
-
+<------------------------FIN JORNADA----------------------------->

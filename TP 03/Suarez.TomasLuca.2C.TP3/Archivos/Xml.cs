@@ -11,6 +11,13 @@ namespace Archivos
 {
     public class Xml<T> : IArchivo<T>
     {
+        #region Metodos
+        /// <summary>
+        /// Guarda archivo XML
+        /// </summary>
+        /// <param name="archivo">Path del archivo a Guardar</param>
+        /// <param name="datos">Datos a guardar</param>
+        /// <returns>True = Guardado correctamente, caso contrario Excepcion</returns>
         public bool Guardar(string archivo, T datos)
         {
             XmlTextWriter writer = null;
@@ -31,6 +38,13 @@ namespace Archivos
             }
             return true;
         }
+
+        /// <summary>
+        /// Lee archivo
+        /// </summary>
+        /// <param name="archivo">Path de archivo a Leer</param>
+        /// <param name="datos">Datos leidos</param>
+        /// <returns>True = Leido correctamente, caso contrario Excepcion</returns>
         public bool Leer(string archivo, out T datos)
         {
             XmlTextReader reader = null;
@@ -45,11 +59,11 @@ namespace Archivos
             {
                 throw new ArchivosException("Error al Leer XML", e);
             }
-            finally
-            {
-                reader.Close();
-            }
+            reader.Close(); // SAQUE EL CLOSE DEL FINALLY 
+                            // SI EL PATH ES ERRONEO EL CLOSE LANZA EXCEPCION NULLREFERENCE
+                            // LA CUAL NO ES CONTROLADA
             return true;
         }
+        #endregion
     }
 }

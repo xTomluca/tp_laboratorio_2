@@ -8,13 +8,15 @@ namespace Excepciones
 {
     public class SinProfesorException : Exception
     {
+        #region Metodo
+        /// <summary>
+        /// Excepcion Sin Profesor
+        /// </summary>
+        /// <param name="message">Mensaje que recibe</param>
         public SinProfesorException(string message) : base(message)
         {
 
         }
-        public SinProfesorException(string message, Exception innerException) : base(message, innerException)
-        {
-
-        }
+        #endregion
     }
 }

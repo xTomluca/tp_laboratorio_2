@@ -8,12 +8,15 @@ namespace Excepciones
 {
     public class DniInvalidoException : Exception
     {
-        public DniInvalidoException()
-        {
-        }
+        #region Metodo
+        /// <summary>
+        /// Excepcion DNI INVALIDO
+        /// </summary>
+        /// <param name="message">Mensaje que recibe</param>
         public DniInvalidoException(string message) : base(message)
         {
 
         }
+        #endregion
     }
 }

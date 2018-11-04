@@ -8,9 +8,15 @@ namespace Excepciones
 {
     public class AlumnoRepetidoException : Exception
     {
+        #region Metodo
+        /// <summary>
+        /// Excepcion Alumno Repetido
+        /// </summary>
+        /// <param name="message">Mensaje de error</param>
         public AlumnoRepetidoException(string message) : base(message)
         {
 
         }
+        #endregion
     }
 }

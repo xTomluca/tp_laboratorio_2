@@ -1,0 +1,25 @@
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\Test.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\Test.pdb
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\Archivos.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\Clases Abstractas.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\Clases Instanciables.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\Excepciones.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\Archivos.pdb
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\Clases Abstractas.pdb
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\Clases Instanciables.pdb
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\Excepciones.pdb
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\obj\Debug\Test.csprojAssemblyReference.cache
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\obj\Debug\Test.csproj.CopyComplete
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\obj\Debug\Test.dll
+E:\tp_laboratorio_2\TP 03\Suarez.TomasLuca.2C.TP3\Test\obj\Debug\Test.pdb
