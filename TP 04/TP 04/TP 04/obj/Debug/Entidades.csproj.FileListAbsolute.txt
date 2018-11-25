@@ -1,0 +1,6 @@
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\TP 04\bin\Debug\TP 04.dll
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\TP 04\bin\Debug\TP 04.pdb
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\TP 04\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\TP 04\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\TP 04\obj\Debug\TP 04.dll
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\TP 04\obj\Debug\TP 04.pdb

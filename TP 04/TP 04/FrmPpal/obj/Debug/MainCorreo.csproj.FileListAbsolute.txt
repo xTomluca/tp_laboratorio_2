@@ -1,0 +1,13 @@
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\FrmPpal\bin\Debug\FrmPpal.exe.config
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\FrmPpal\bin\Debug\FrmPpal.exe
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\FrmPpal\bin\Debug\FrmPpal.pdb
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\FrmPpal\bin\Debug\TP 04.dll
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\FrmPpal\bin\Debug\TP 04.pdb
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\FrmPpal\obj\Debug\MainCorreo.csprojAssemblyReference.cache
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\FrmPpal\obj\Debug\FrmPpal.FrmPpal.resources
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\FrmPpal\obj\Debug\FrmPpal.Properties.Resources.resources
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\FrmPpal\obj\Debug\MainCorreo.csproj.GenerateResource.cache
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\FrmPpal\obj\Debug\MainCorreo.csproj.CoreCompileInputs.cache
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\FrmPpal\obj\Debug\MainCorreo.csproj.CopyComplete
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\FrmPpal\obj\Debug\FrmPpal.exe
+C:\Users\TOMYLILPUP\Desktop\ProLab2\TP 04\TP 04\FrmPpal\obj\Debug\FrmPpal.pdb
